@@ -55,11 +55,13 @@ print(ret)
 '''
 
 # 또는
+'''
 from mylibs.module05 import *
 print('Main run')
 a = [10,40,60,30,20]
 ret = total(a)
 print(ret)
+'''
 
 import sys # 파이썬 라이브러리가 설치되어 있는 폴더들 확인
 print(sys.path)
@@ -67,3 +69,62 @@ print(sys.path)
 # 모듈이 위의 경로에 있는 경우에는 폴더를 이동하거나 폴더명을 작성할 필요 없이 모듈명만을 적어 사용할 수 있음
 # 자신이 사용할 폴더는 추가하기 위해 sys.path.append('추가경로')를 실행하면 바로 모듈명으로 import하여 사용할 수 있음
 # 1급 시험에서 1~2문제 나올뿐만 아니라 파이썬 학습에 필수적!
+
+'''
+from classes import *
+
+gotcha = Pokemon()
+jimbar = Pokemon()
+swan = Pokemon()
+
+# 포켓몬의 이름을 정해줌
+gotcha.name = '갓챠'
+jimbar.name = '짐바'
+swan.name = '스완'
+
+print(gotcha.name)
+print(jimbar.name)
+print(swan.name)
+'''
+'''
+from classes import *
+
+gotcha = Pokemon()
+jimbar = Pokemon()
+gotcha.name = '갓챠'
+jimbar.name = '짐바'
+
+gotcha.sleep()
+jimbar.sleep()
+'''
+# 에러 발생 -> 메서드 정의 시 반드시 소괄호 안에 self를 적어야 
+# sleep 메서드를 호출할 때는 소괄호 안에 아무것도 적지 않지만
+# 파이썬은 실행 시 자동으로 현재 인스턴스의 정보를 self 매개변수로 전달
+# 그러므로 sleep(gotcha)가 아닌 sleep()으로 호
+
+'''
+from classes import *
+poke1 = Pokemon()
+poke2 = Pokemon()
+poke3 = Pokemon()
+print(poke1.production,id(poke1))
+print(poke2.production,id(poke2))
+print(poke3.production,id(poke3))
+'''
+
+# 모든 인스턴스가 같은 값을 가져야 하는 경우 클래스 정의 시 필드에 값을 대입해 놓으면 편리
+# 클래스의 인스턴스를 생성할 때 필수적인 정보가 있어야 함을 알릴 수 있는데 보통 __init__ 메서드라는 것을 정의하는 방법을 사용
+# __init__: 인스턴스 생성 후 변수(필드)들을 초기화한다
+
+'''
+from classes import *
+gotcha = Pokemon('갓챠')
+jimbar = Pokemon('짐바')
+swan = Pokemon()
+
+gotcha.sleep()
+jimbar.sleep()
+swan.sleep()
+'''
+from classes import *
+gotcha = Pokemon()
