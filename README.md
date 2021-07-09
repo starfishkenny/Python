@@ -5,4 +5,4 @@
   * <Step by Step 파이썬 비즈니스 통계분석>, 김형수
 
 - Acquired skills
-  * Able to conduct statistical analysis using Python and libraries such as NumPy, Pandas, Pingouin and SciPy
+  * Able to conduct statistical analysis using Python and libraries including NumPy, Pandas, Pingouin and SciPy
