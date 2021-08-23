@@ -1,2 +1,3 @@
 # Data-Visualizaton
-For my own study of data visualization
+
+* For studying & practicing data visualization methods & skills
