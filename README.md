@@ -5,3 +5,11 @@
 * Currently studying Kaggle Data Visualization course (2021.08 ~) (<https://www.kaggle.com/learn/data-visualization>)
   
   - Matplotlib, Seaborn basics
+     
+    + Line Charts
+    
+    + Bar Charts & Heatmap
+    
+    + Scatter Plots
+    
+    + Distributions
